@@ -1,0 +1,42 @@
+{
+    /// Basic
+    "layer": "bottom",	
+    "output": "HDMI-A-2",
+    "position": "bottom",
+    "height": 32,
+
+    /// Position
+    "modules-left": ["river/tags", "river/window"],
+    "modules-center": [],
+    "modules-right": [ "network", "tray", "clock"],
+
+    /// Configaration
+    "river/tags": {
+	"num-tags": 8,
+	"tag-labels": [ "", "", "", "", "", "󰹂", "", "" ]
+    },
+
+    "river/window": {
+	"format": "{}",
+	"max-length": 100
+    },
+
+    "network": {
+        "format-ethernet": " Connected",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    },
+
+    "clock": {
+        "format": "{:[%a] %b %e}",
+	"format-alt": "{:%H:%M:%S}",
+        "interval": 1
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 8
+    },
+}

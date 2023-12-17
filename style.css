@@ -1,0 +1,105 @@
+@define-color bar-bg-color #0f0f0f;
+@define-color box-bg-color #1d1d1d;
+@define-color box-bg-sel-color #303030;
+@define-color box-fg-color #ececec; 
+@define-color box-fg-sel-color #cbcad7;
+@define-color box-fg-inac-color #5d5d5d;
+@define-color urgent-fg-color #d7caca;
+
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: 'IBM Plex Mono', "FontAwesome Nerd Font";
+    font-size: 16px;
+    min-height: 0;
+}
+
+.modules-left, .modules-right {
+    background-color: @bar-bg-color;
+}
+
+#tags {
+    margin: 0px 5px;
+}
+
+#tags button,
+#tags button.occupied,
+#tags button.focused,
+#tags button.urgent {
+    margin: 1px;
+    border-radius: 0px;
+}
+
+#tags button {
+    color: @box-fg-inac-color;
+    padding: 0px 2px;
+}
+
+#tags button.occupied {
+    color: @box-fg-color;
+    background-color: @box-bg-sel-color;
+}
+
+#tags button.focused {
+    color: @box-fg-sel-color;
+    background-color: @box-bg-color;
+}
+
+#tags button.urgent {
+    color: @urgent-fg-color;
+    background-color: @box-bg-color;
+}
+
+window#waybar { 
+    color: @box-bg-color;
+    background-color: @box-bg-color;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: @bar-bg-color;
+    border-style: solid;
+}
+
+#window,
+#window.focused {    
+    margin: 1px 0px;
+}
+
+#window {
+    color: @box-bg-color;
+    background-color: @box-bg-color;
+    padding: 0px 11px;
+}
+
+#window.focused {
+    color: @box-fg-color;
+    background-color: @box-bg-color;
+}
+
+#network,
+#network.disconnected,
+#clock {
+    padding: 0px 11px;
+    margin: 1px 6px;
+}
+
+#network {
+    color: @box-fg-color;
+    background-color: @box-bg-color;
+}
+
+#network.disconnected {
+    color: @urgent-fg-color;
+    background-color: @box-bg-color;
+}
+
+#clock {
+    color: @box-fg-color;
+    background-color: @box-bg-sel-color;
+}
+
+#tray {
+    background-color: @box-bg-color;
+    background-image: linear-gradient(90deg, rgba(29,29,29,1) 0%, rgba(48,48,48,1) 100%);
+    padding: 0px 11px;
+    margin: 1px 0px;
+}
