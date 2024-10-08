@@ -10,8 +10,10 @@
     border: none;
     border-radius: 0px;
     font-family: 'IBM Plex Mono', "FontAwesome Nerd Font";
+    font-weight: normal;
     font-size: 16px;
     min-height: 0;
+    min-width: 0;
 }
 
 .modules-left, .modules-right {
@@ -26,6 +28,7 @@
 #tags button.occupied,
 #tags button.focused,
 #tags button.urgent {
+    min-width: 40px;
     margin: 1px;
     border-radius: 0px;
 }
