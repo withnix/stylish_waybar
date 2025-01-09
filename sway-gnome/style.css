@@ -9,6 +9,8 @@
 @define-color col-5 #ff5555;
 /* Workspace normal foreground */
 @define-color col-6 #3d3d3d;
+/* Hover */
+@define-color col-7 #8e8c8d;
 
 * {
     border: none;
@@ -51,21 +53,20 @@
 
 #mode {
     color: @col-5;
-    margin: 0 11px;
+    margin: 0 10px;
 }
 
-#disk,
 #network,
 #cpu {
     color: @col-4;
-    margin: 0 11px;
+    margin: 0 10px;
 }
 
 #pulseaudio,
 #memory,
 #clock {
     color: @col-2;
-    margin: 0 11px;
+    margin: 0 10px;
 }
 
 #network.disconnected {
@@ -76,6 +77,13 @@
     color: @col-5;
 }
 
+#pulseaudio:hover,
+#network:hover,
+#memory:hover,
+#cpu:hover {
+    color: @col-7;
+}
+
 #tray {
-    margin: 0 11px;
+    margin: 0 10px;
 }

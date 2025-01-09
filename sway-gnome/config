@@ -13,11 +13,11 @@
         "clock"
     ],
     "modules-right": [
+	    "tray",
 	    "pulseaudio",
 	    "network",
         "memory",
-        "cpu",
-	    "tray"
+        "cpu"
     ],
 
     /// Configaration
